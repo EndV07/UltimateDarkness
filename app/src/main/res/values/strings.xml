@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ultimate Darkness</string>
+    <string name="villanLabel">Villain </string>
+    <string name="heroLabel">Hero </string>
+    <string name="lifepoints">Lifepoints</string>
+    <string name="minionInfo"># minion - 00 LP</string>
+</resources>

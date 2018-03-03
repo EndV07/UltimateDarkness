@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.endv.game.ultimatedarkness.MainActivity">
+
+
+    <TextView
+        android:id="@+id/HeroLabel"
+        android:layout_width="95dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="294dp"
+        android:layout_marginLeft="294dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/heroLabel"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HeroLifePoints2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/lifepoints"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/idVillanLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idVillanLabel"
+        android:layout_width="95dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/villanLabel"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/villainLifePoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/lifepoints"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/idVillanLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/minionInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/minionInfo"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idVillanLabel" />
+
+    <Button
+        android:id="@+id/vAttack"
+        android:background="@color/attackbutton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minionInfo" />
+
+    <Button
+        android:id="@+id/vDefense"
+        android:background="@color/defensebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/vAttack"
+        app:layout_constraintTop_toBottomOf="@+id/minionInfo" />
+
+    <Button
+        android:id="@+id/vRestore"
+        android:background="@color/restbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/vDefense"
+        app:layout_constraintTop_toBottomOf="@+id/minionInfo" />
+
+    <Button
+        android:id="@+id/hAttack"
+        android:background="@color/attackbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/vRestore"
+        app:layout_constraintTop_toBottomOf="@+id/minionInfo" />
+
+    <Button
+        android:id="@+id/hDefense"
+        android:background="@color/defensebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/hAttack"
+        app:layout_constraintTop_toBottomOf="@+id/minionInfo" />
+
+    <Button
+        android:id="@+id/hRestore"
+        android:background="@color/restbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/hDefense"
+        app:layout_constraintTop_toBottomOf="@+id/minionInfo" />
+
+    <TextView
+        android:id="@+id/gameLog"
+        android:layout_width="526dp"
+        android:layout_height="112dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="GameLog:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hRestore" />
+</android.support.constraint.ConstraintLayout>
